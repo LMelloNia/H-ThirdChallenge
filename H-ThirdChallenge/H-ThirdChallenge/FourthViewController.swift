@@ -40,6 +40,7 @@ class FourthViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
+        autoLayout()
         // Do any additional setup after loading the view.
     }
     
@@ -75,7 +76,7 @@ extension FourthViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "codeCell", for: indexPath) as! CollectionViewCell
-        return UICollectionViewCell()
+        return cell
     }
     func collectionView(
               _ collectionView: UICollectionView,
