@@ -32,6 +32,9 @@ class FourthViewController: UIViewController {
         cv.backgroundColor = .purple
         return cv
     }()
+    
+    let imageArray = ["trash","trash.fill","trash.circle"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -71,11 +74,12 @@ class FourthViewController: UIViewController {
 
 extension FourthViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return imageArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "codeCell", for: indexPath) as! CollectionViewCell
+        cell.imageView.image = UIImage(systemName: imageArray[indexPath.row])
         return cell
     }
 //    func collectionView(
