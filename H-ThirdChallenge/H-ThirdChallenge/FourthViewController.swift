@@ -78,13 +78,13 @@ extension FourthViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "codeCell", for: indexPath) as! CollectionViewCell
         return cell
     }
-    func collectionView(
-              _ collectionView: UICollectionView,
-              layout collectionViewLayout: UICollectionViewLayout,
-              sizeForItemAt indexPath: IndexPath
-         ) -> CGSize {
-              return CGSize(width: 300, height: 100)
-         }
+//    func collectionView(
+//              _ collectionView: UICollectionView,
+//              layout collectionViewLayout: UICollectionViewLayout,
+//              sizeForItemAt indexPath: IndexPath
+//         ) -> CGSize {
+//              return CGSize(width: 300, height: 100)
+//         }
     
 }
 
