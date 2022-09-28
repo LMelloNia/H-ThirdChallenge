@@ -46,14 +46,14 @@ class FourthViewController: UIViewController {
     
     func autoLayout() {
         NSLayoutConstraint.activate([
-//            collectionView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0),
-//            collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
-//            collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0),
-//            collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
-            collectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0),
-            collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0),
-            collectionView.widthAnchor.constraint(equalToConstant: 250),
-            collectionView.heightAnchor.constraint(equalToConstant: 250)
+            collectionView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0),
+            collectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
+            collectionView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0),
+            collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0)
+//            collectionView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0),
+//            collectionView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0),
+//            collectionView.widthAnchor.constraint(equalToConstant: 250),
+//            collectionView.heightAnchor.constraint(equalToConstant: 250)
         ])
     }
 
