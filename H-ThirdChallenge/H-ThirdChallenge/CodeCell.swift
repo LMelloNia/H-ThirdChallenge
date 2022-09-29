@@ -19,25 +19,23 @@ class CodeCell: UITableViewCell {
     }()
     
     lazy var codeLabel: UILabel = {
-       let cll = UILabel()
-        cll.translatesAutoresizingMaskIntoConstraints = false
-        cll.backgroundColor = .orange
-        return cll
+       let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.backgroundColor = .orange
+        return label
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super .init(style: .default, reuseIdentifier: reuseIdentifier)
         setupUI()
+        autoLayout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func updateConstraints() {
-        autoLayout()
-        super.updateConstraints()
-    }
+
     
 //    override func awakeFromNib() {
 //        super.awakeFromNib()
@@ -52,8 +50,8 @@ class CodeCell: UITableViewCell {
 //    }
     
     func setupUI() {
-        self.addSubview(codeImageView)
-        self.addSubview(codeLabel)
+        contentView.addSubview(codeImageView)
+        contentView.addSubview(codeLabel)
     }
     
     func autoLayout() {
